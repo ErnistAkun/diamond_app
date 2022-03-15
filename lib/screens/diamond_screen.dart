@@ -1,17 +1,20 @@
 import 'package:diamond_app/constants/colors.dart';
 import 'package:flutter/material.dart';
-import 'constants/text_styles.dart';
+import 'package:diamond_app/constants/text_styles.dart';
 
-class HomePage extends StatelessWidget {
-  const HomePage({Key key}) : super(key: key);
+class DiamondScreen extends StatelessWidget {
+  const DiamondScreen({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("I'm Rich"),
+        title: const Text(
+          "I'm Rich",
+          style: AppTextStyles.appBarStyle,
+        ),
         centerTitle: true,
-        backgroundColor: Colors.purple,
+        backgroundColor: AppColor.appBarColor,
       ),
       backgroundColor: AppColor.bgColor,
       body: Center(
